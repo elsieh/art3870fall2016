@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="stylesheets/foundation.css">
     <link rel="stylesheet" href="stylesheets/app.css">
     <link rel="stylesheet" href="stylesheets/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet">
+
+    <!-- custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
   </head>
   <body>
 
 <section class="row">
-<h1 class="columns small-12 large-6">headline</h1>
-<img src="http://placekitten.com/g/600/800" alt="" class="column small-12
-large-12"/>
+<h1 class="columns small-12 large-12">Elsie - Interaction Designer</h1>
+<img class="profile" src="imgs/elsie.png">
 </section>
 
-<section>
- Welcome to page 47. I just wanted to say:
- <span id="greeting">hello!</span>
+<section class="secondrow">
+  <span id="greeting">hello!</span>
 </section>
 
 <script type="text/javascript">
@@ -33,6 +35,21 @@ large-12"/>
     document.getElementById('greeting').innerHTML = "Good Morning!";
     console.log("line 34 saying hello");
   }
+  else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
+{
+    document.getElementById('greeting').innerHTML = "Good Afternoon!";
+}
+else  /* the hour is after 5pm, so it is between 6pm and midnight */
+if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
+{
+   document.getElementById('greeting').innerHTML = "Good Evening!";
+}
+else  /* the hour is not between 0 and 24, so something is wrong */
+{
+    document.getElementById('greeting').innerHTML = "I'm not sure what time it is!";
+}
+
 
 
 

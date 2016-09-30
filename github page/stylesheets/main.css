@@ -1,5 +1,22 @@
-* {
-     border:1px solid red;
-     font-family: 'Open Sans', sans-serif;
+* { font-family: 'Open Sans', sans-serif;
+
 }
-#greeting{color:red;}
+h1
+ { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     text-transform: uppercase;
+     font-weight: 700;
+     text-align:center;
+     color: #d6a7ca;
+     margin-top: 20px;
+   }
+.profile { height:40%; width: 40%;
+          border-radius: 50%;
+          display: block;
+          margin: auto;
+    }
+
+.secondrow { margin-top: 30px;
+             text-align: center;
+             color: #8c8580;
+             font-size: 1.20em
+}
