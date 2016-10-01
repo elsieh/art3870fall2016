@@ -1,12 +1,10 @@
-* { font-family: 'Open Sans', sans-serif;
 
-}
-h1
- { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+h1 { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
      text-transform: uppercase;
-     font-weight: 700;
-     text-align:center;
+     text-align: center;
      color: #d6a7ca;
+     font-weight: 700;
+     font-size: 18px
      margin-top: 20px;
    }
 img { height:40%;
@@ -22,5 +20,33 @@ img { height:40%;
         margin-bottom: 20px;
         text-align: center;
         color: #8c8580;
-        font-size: 1.8em
+        font-size: 30px;
+       }
+}
+
+@media screen and (min-width:0px) and (max-width:640px) {
+  /* CSS code for small screens */
+h1
+ { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     text-transform: uppercase;
+     color: #d6a7ca;
+     text-align: center;
+     font-weight: 700;
+     font-size: 48px
+     margin-top: 40px;
+   }
+img { height:40%;
+      width: 40%;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+
+    }
+
+#greeting { display:block;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #8c8580;
+        font-size: 20px
 }
