@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="onload goto scrolltop" />
+<title>Fun Facts of Taiwan</title>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<link rel="stylesheet" href="stylesheets/main.css">
+<link rel="stylesheet" href="stylesheets/animations.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:700|Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <figure id="taiwan" class="floating">
+  <img src="imgs/taiwan_logo.png"> </figure>
+
+<section id="one">
+  <h1 id="title">Fun Facts of Taiwan </h1>
+</section>
+
+<section id="two">
+  <img id="map" src="imgs/map1.png" alt="Image of a map">
+  <h1 id="location">Location</h1>
+</section>
+
+<section id="three">
+    <img id="boba" src="imgs/boba.png" alt="Image of a boba">
+    <h1 id="original">Where Boba Tea From</h1>
+
+</section>
+
+<section id="four">
+<img id="tsaileft" src="imgs/tsai1.png" alt="">
+<img id="tsairight" src="imgs/tsai2.png" alt="">
+<h1 id="president"> Has First Female President</h1>
+
+</section>
+
+<section id="five">
+  <img id="couple1" src="imgs/couple1.png" alt="">
+  <img id="couple2" src="imgs/couple2.png" alt="">
+   <h1 id="equal">Biggest Gay Parade in Asia</h1>
+
+</section>
+
+<section id="six">
+  <img id="store" src="imgs/stores.png" alt="">
+  <h1 id="density"> High Density Of Convenience Stores </h1>
+</section>
+
+<section id="seven">
+<img id="dintaifung" src="imgs/din.png" alt="">
+<img id="dumplings" src="imgs/dumplings.png" alt="">
+<h1 id="bao"> Famous Xiaolongbao </h1>
+</section>
+</div>
+
+<script>
+$(window).scroll(function() {
+  $('#map').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+80) {
+      $(this).addClass("slideRight");
+    }
+    else
+      $(this).removeClass("slideRight");
+
+  });
+
+  $('#boba').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+300) {
+      $(this).addClass("slideExpandUp");
+    }
+    else
+      $(this).removeClass("slideExpandUp");
+
+  });
+
+  $('#tsaileft').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+200) {
+      $(this).addClass("hatch");
+    }
+    else
+      $(this).removeClass("hatch");
+
+  });
+
+  $('#tsairight').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+200) {
+      $(this).addClass("hatch");
+    }
+    else
+      $(this).removeClass("hatch");
+
+  });
+
+  $('#couple1').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+400) {
+      $(this).addClass("fadeIn");
+    }
+    else
+      $(this).removeClass("fadeIn");
+
+  });
+
+  $('#couple2').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+400) {
+      $(this).addClass("fadeIn");
+    }
+    else
+      $(this).removeClass("fadeIn");
+
+  });
+
+  $('#store').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+400) {
+      $(this).addClass("expandUp");
+    }
+    else
+      $(this).removeClass("expandUp");
+
+  });
+
+  $('#dintaifung').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+400) {
+      $(this).addClass("slideRight");
+    }
+    else
+      $(this).removeClass("slideRight");
+
+  });
+
+  $('#dumplings').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+400) {
+      $(this).addClass("slideLeft");
+    }
+    else
+      $(this).removeClass("slideLeft");
+
+  });
+
+
+
+});
+</script>
+
+</body>
+</html>
